@@ -1,0 +1,154 @@
+.user-management-container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: -20px;
+  color: #030303; /* Dark blue */
+  margin-bottom: 2px;
+}
+
+.add-admin {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-admin input{
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: 20px;
+  margin-top: 10px;
+  background-color: #7db2ec;
+  color: #040404;
+}
+.add-admin select {
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: #7db2ec;
+  color: #040404;
+}
+
+.add-button {
+  background-color: #000000; /* Blue */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  height: 40px;
+  width: 550px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #001f3f; /* Blue borders */
+  padding: 10px;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: #001f3f; /* Dark blue */
+  color: white; /* White text */
+}
+
+.status-active {
+  color: #007bff; /* Blue */
+  font-weight: bold;
+}
+
+.status-disabled {
+  color: #ff0000; /* Red */
+  font-weight: bold;
+}
+
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.edit-btn {
+  color: #0056b3; /* Blue */
+}
+
+.delete-btn {
+  color: #ff0000; /* Red */
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background: #001f3f; /* Dark Blue */
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color: white;
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  background: #0022ff;
+  color: white;
+}
+
+.modal-content button {
+  padding: 8px 15px;
+  background-color: #007bff; /* Blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.status-btn, .delete-btn {
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.status-btn {
+  background-color: #0056b3; /* Blue */
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ff0000; /* Red */
+  color: white;
+}

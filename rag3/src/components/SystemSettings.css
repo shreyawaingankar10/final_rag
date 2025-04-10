@@ -1,0 +1,193 @@
+/* Overall Page Styling */
+/* Ensure the navbar is always visible and accessible */
+
+/* Add padding to the main content to prevent overlap with the fixed navbar */
+.settings-content {
+    padding-top: 60px;
+  }
+  
+  .settings-container {
+      margin-top: 0px;
+      display: flex;
+      height: 78vh; /* Full screen height */
+      background-color: #f9f9f9; /* Light background */
+      color: #333333; /* Dark text */
+      font-family: 'Arial', sans-serif;
+  }
+  
+  .go-homepage-button {
+      position: fixed;
+      margin-top: 500px;
+      right: 20px;
+      background-color: #007bff; /* Blue button */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+  
+  .go-homepage-button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Sidebar Styling */
+  .settings-sidebar {
+      width: 350px;
+      padding: 40px 40px;
+      margin-bottom: 0px;
+      background: rgba(0, 123, 255, 0.1); /* Light Blue Transparent Sidebar */
+      box-shadow: 2px 0 10px rgba(0, 123, 255, 0.3);
+      border-right: 2px solid #007bff; /* Blue Border */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Distributes content evenly */
+  }
+  
+  .settings-sidebar h2 {
+      text-align: center;
+      color: #007bff; /* Blue Heading */
+      margin-bottom: 30px;
+  }
+  
+  .settings-sidebar ul {
+      list-style: none;
+      padding: 0;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers items vertically */
+  }
+  
+  .settings-sidebar li {
+      margin: 20px 0;
+  }
+  
+  .settings-sidebar button {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      color: #333333; /* Dark text */
+      font-size: 18px;
+      padding: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      display: block;
+  }
+  
+  .settings-sidebar button:hover {
+      background-color: #007bff; /* Blue Hover Effect */
+      color: white;
+  }
+  
+  .settings-sidebar .active {
+      background-color: #007bff; /* Active Tab Highlight */
+      color: white;
+      font-weight: bold;
+  }
+  
+  /* Content Section */
+  .settings-content {
+      flex-grow: 1;
+      width: 1500px;
+      padding: 30px; /* Increased padding */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; /* Ensures even spacing */
+      align-items: center; /* Aligns content to the left */
+      height: 150vh; /* Full height */
+      margin-top: -280px;
+  }
+  
+  /* Headings */
+  .settings-content h3 {
+      color: #007bff; /* Blue Headings */
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 40px; /* More spacing */
+  }
+  
+  /* Sections Spacing */
+  .settings-section {
+      flex-grow: 1; /* Makes sure sections take full height */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers within its section */
+      gap: 20px; /* Space between elements */
+  }
+  
+  /* Checkboxes */
+  .checkbox-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px; /* More spacing */
+  }
+  
+  .checkbox-container input {
+      margin: 0;
+      width: 20px;
+      height: 20px;
+      accent-color: #007bff; /* Blue Checkboxes */
+  }
+  
+  /* Labels */
+  label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+  }
+  
+  /* Toggle Button */
+  .toggle-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin: 50px 0; /* More spacing */
+  }
+  
+  .toggle-btn {
+      width: 80px;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      text-align: center;
+      cursor: pointer;
+      background: gray;
+      color: white;
+      transition: 0.3s;
+  }
+  
+  .toggle-btn.active {
+      background: #007bff; /* Blue Active Toggle */
+      color: white;
+  }
+  
+  .toggle-btn:hover {
+      background: #007bff; /* Blue Hover Toggle */
+      color: white;
+  }
+  
+  /* Input Fields & Select Boxes */
+  input, select {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 20px 0; /* More spacing */
+      background: white; /* White background */
+      color: #333333; /* Dark text */
+      border: 2px solid #007bff; /* Blue border */
+      border-radius: 5px;
+      transition: 0.3s;
+  }
+  
+  input:hover, select:hover {
+      border-color: #0056b3; /* Darker blue on hover */
+  }
+  

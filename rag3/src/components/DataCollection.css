@@ -1,0 +1,83 @@
+/* Full Page Styling */
+.data-collection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9; /* Light background */
+  color: #333333; /* Dark text */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #007bff; /* Blue for the title */
+  margin-bottom: 20px;
+}
+
+/* Sources Container */
+.sources-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Input Box and Button */
+.source-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.source-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #007bff; /* Blue border */
+  background: #ffffff; /* White background */
+  color: #333333; /* Dark text */
+  margin-right: 10px;
+  margin-top: 37px;
+}
+
+.select-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #007bff; /* Blue background */
+  color: white;
+  margin-top: 37px;
+}
+
+.select-button:hover {
+  background: #1e90ff; /* Lighter blue on hover */
+}
+
+/* Add New Source Button */
+.add-source-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align to bottom left */
+  margin-top: 20px;
+}
+
+.add-source {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #007bff; /* Blue background */
+  color: white;
+}
+
+.add-source:hover {
+  background: #1e90ff; /* Lighter blue on hover */
+}

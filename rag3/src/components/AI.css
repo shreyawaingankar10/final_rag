@@ -1,0 +1,90 @@
+/* General Styles */
+.ai-analysis-container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    color: #333333; /* Dark text */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Section */
+.ai-header h1 {
+    font-size: 28px;
+    color: #007bff; /* Blue Highlight */
+}
+
+.ai-header h2 {
+    font-size: 22px;
+    color: #333333; /* Dark Text */
+}
+
+/* Content Layout */
+.ai-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Equal columns */
+    gap: 30px;
+    margin-top: 20px;
+    align-items: stretch; /* Ensures equal height */
+}
+
+/* Left and Right Sections */
+.ai-left-section, .ai-right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards */
+.ai-card {
+    background: rgba(255, 255, 255, 0.9); /* Light background for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2); /* Blue shadow */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px; /* Ensures equal height across boxes */
+}
+
+/* Individual Card Styles */
+.ai-summary h3, .ai-sentiment h3, .ai-authenticity h3,
+.ai-highlights h3, .ai-impact h3, .ai-recommendations h3 {
+    color: #007bff; /* Blue Headers */
+}
+
+/* Text Colors */
+.ai-negative {
+    color: #ff4d4d; /* Red for negative sentiment */
+    font-weight: bold;
+}
+
+.ai-card p, .ai-card ul {
+    color: #333333; /* Dark text */
+}
+
+/* Footer Section */
+.ai-footer {
+    margin-top: 30px;
+}
+
+.ai-footer a {
+    color: #007bff; /* Blue link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ai-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .ai-content {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+    
+    .ai-left-section, .ai-right-section {
+        width: 100%;
+    }
+}

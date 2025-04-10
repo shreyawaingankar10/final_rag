@@ -1,0 +1,128 @@
+/* Container for the entire page */
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Allow absolute positioning for the overlay */
+  overflow: hidden; /* Hide the elements during the animation */
+}
+
+/* Apply blur effect to the background */
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4); /* Light overlay */
+  backdrop-filter: blur(8px); /* Blur the background image */
+  z-index: -1; /* Make sure the overlay stays behind the content */
+}
+
+/* Login box styling with light background and subtle shadows */
+.login-box {
+  background: rgba(255, 255, 255, 0.85); /* Light and clean background */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-left: -800px;
+  width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.2); /* Soft glow */
+  animation: slideIn 1s ease-out, fadeIn 1s ease-in-out; /* Slide-in effect combined with fade-in */
+  transition: all 0.4s ease;
+}
+
+/* Title styling */
+.login-title {
+  text-align: center;
+  font-size: 28px;
+  color: #007bff; /* Light blue color */
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px #007bff;
+  letter-spacing: 1px;
+}
+
+/* Input group styling */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  color: #333; /* Dark grey for readability */
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc; /* Light border */
+  background: rgba(255, 255, 255, 0.9); /* Slightly off-white background */
+  color: #333; /* Dark grey text */
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Focus effect on input fields */
+.input-group input:focus {
+  background-color: #f0f0f0; /* Light grey on focus */
+  box-shadow: 0 0 10px #007bff; /* Soft blue glow */
+  border: 1px solid #007bff;
+}
+
+/* Error message styling */
+.error {
+  color: #ff4c4c;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #007bff; /* Light blue background */
+  color: #fff; /* White text */
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  box-shadow: 0 0 12px #007bff; /* Blue shadow */
+}
+
+/* Button hover effect */
+.login-button:hover {
+  background: #ffffff; /* White background */
+  color: #007bff; /* Blue text */
+  box-shadow: 0 0 18px #007bff; /* Blue glow */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide-in animation (mimicking the "running" effect) */
+@keyframes slideIn {
+  from {
+    transform: translateY(100vh); /* Start from below the screen */
+  }
+  to {
+    transform: translateY(0); /* Move into the normal position */
+  }
+}

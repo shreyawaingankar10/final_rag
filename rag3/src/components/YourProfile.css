@@ -1,0 +1,109 @@
+/* Profile details styling */
+.profile-details {
+    margin-bottom: 20px;
+}
+
+.profile-item {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    margin: 10px 0; /* Uniform gaps */
+    font-size: 1.2rem;
+    margin-left: 200px;
+}
+
+.profile-item strong {
+    font-weight: bold;
+    color: #333; /* Dark text for light mode */
+    width: 30%; /* Adjust width of label */
+    margin-right: 10px; /* Space between label and input field */
+    text-align: left; /* Align text to left */
+}
+
+.profile-item span,
+.profile-item input {
+    color: #333; /* Dark text */
+    padding: 8px;
+    border-radius: 5px;
+    width: 60%; /* Adjust width of input field */
+    text-align: left;
+    font-size: 1rem;
+}
+
+.profile-item input {
+    background-color: #f7f7f7; /* Light background for input */
+    border: 1px solid #ddd; /* Light border */
+}
+
+.profile-item input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+}
+
+h2 {
+    color: #333; /* Dark heading text */
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Button styles */
+.edit-btn, .save-btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #0e0e0f, #004aad); /* Blue gradient */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.edit-btn:hover, .save-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5); /* Blue glow */
+}
+
+/* Success message styling */
+.success-message {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: green; /* Green text for success */
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+    }
+
+    .profile-item {
+        font-size: 1rem;
+        flex-direction: column; /* Stack the label and input on smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .profile-item strong {
+        width: 100%; /* Label takes full width on smaller screens */
+        margin-bottom: 5px; /* Add space below the label */
+    }
+
+    .profile-item input {
+        width: 100%; /* Input takes full width on smaller screens */
+    }
+}

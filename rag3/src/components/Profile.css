@@ -1,0 +1,81 @@
+/* Profile Page - Centered on Screen */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 97vw; /* Adjust width for a balanced look */
+  height: auto;
+  padding: 20px;
+  background-color: #a3c9f2; /* Light blue background */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}
+
+/* Profile Header */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #007bff; /* Blue border */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4); /* Blue glow */
+  margin-bottom: 15px; /* Space between profile picture and name */
+}
+
+/* Profile Picture Image */
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Profile Name */
+h3.profile-name {
+  font-size: 26px;
+  color: black; /* Black text for name */
+  margin-top: -20px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+/* Container for profile details */
+.profile-details-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 0px; /* Added padding */
+  background-color: #ffffff; /* Darker blue background */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -30px;
+}
+
+/* Heading for Profile Details */
+.profile-details-container h2 {
+  font-size: 28px;
+  color: black; /* Black heading */
+  margin-bottom: 10px;
+}
+
+/* Profile Content Styling */
+.content {
+  padding: 15px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  color: black; /* Black text in the content section */
+}
+
+/* Profile Detail Text */
+.profile-details-container p {
+  color: black; /* Black text for profile details */
+  font-size: 18px;
+  margin-top:10px;
+}

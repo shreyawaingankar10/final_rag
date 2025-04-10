@@ -1,0 +1,175 @@
+.dashboard-container {
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f1f1f1; /* Light background with a soft greyish tint */
+  color: #2f2f2f; /* Darker text for better readability */
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0066cc; /* Deep blue for title */
+  text-shadow: 0 0 10px #4d94ff; /* Soft glowing blue effect */
+}
+
+.dashboard-dropdown-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-dropdown-container label {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #333333;
+}
+
+.dashboard-dropdown-container select {
+  padding: 8px 14px;
+  font-size: 16px;
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid #4d94ff;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.dashboard-dropdown-container select:hover {
+  box-shadow: 0 0 10px #4d94ff;
+}
+
+.dashboard-panel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.dashboard-button {
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #0066cc; /* Deep blue text */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #4d94ff;
+}
+
+.dashboard-button:hover,
+.dashboard-button.dashboard-active {
+  background: #0066cc; /* Deep blue background */
+  color: #ffffff; /* White text */
+  box-shadow: 0 0 12px #4d94ff;
+}
+
+.dashboard-panel-content {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-news-feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-news-card {
+  background: rgba(0, 123, 255, 0.15); /* Lighter blue background */
+  border: 1px solid rgba(30, 144, 255, 0.4);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.dashboard-news-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #4d94ff;
+}
+
+.dashboard-news-card h3 {
+  color: #080808; /* Vibrant blue for headings */
+  margin-bottom: 10px;
+}
+
+.dashboard-news-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #333333; /* Dark text */
+}
+
+.dashboard-news-card a {
+  color: #0e0e0e;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.dashboard-news-card a:hover {
+  color: #040404; /* Lighter blue on hover */
+}
+
+/* AI Analysis Panel */
+.dashboard-ai-panel {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0, 123, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 18px rgba(30, 144, 255, 0.3);
+}
+
+.ai-summary-card {
+  background: rgba(30, 144, 255, 0.07);
+  border-left: 4px solid #4d94ff;
+  padding: 1rem;
+  margin: 10px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: #333333;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.2);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.dashboard-ai-panel h2 {
+  color: #287ed9;
+  text-shadow: 0 0 8px #4d94ff;
+}
+
+/* Recent Alerts */
+.dashboard-alert-panel {
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0, 123, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 18px rgba(30, 144, 255, 0.3);
+}
+
+.dashboard-alert-card {
+  background-color: rgba(30, 144, 255, 0.12);
+  border-left: 5px solid #4d94ff;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  border-radius: 10px;
+  color: #333333;
+  font-weight: 500;
+  box-shadow: 0 0 14px rgba(30, 144, 255, 0.3);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.dashboard-alert-panel h2 {
+  color: #007bff;
+  text-shadow: 0 0 6px #4d94ff;
+}

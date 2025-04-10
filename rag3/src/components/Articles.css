@@ -1,0 +1,213 @@
+/* Basic Container Styling */
+.article-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    width:1100px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Article Tiles Styling */
+.articles-tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.article-tile {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.article-tile:hover {
+    transform: translateY(-10px);
+}
+
+.article-tile h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.article-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.article-body p {
+    font-size: 16px;
+    color: #555;
+}
+
+.read-more {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(179, 175, 175, 0.377);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 50;
+    transition: opacity 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    padding-top: 50px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateY(-50px);
+}
+
+/* Modal Heading */
+.modal-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Modal Body */
+.modal-content p {
+    font-size: 18px;
+    padding-top: 30px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Input Fields Styling */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #100e0e;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #ff6f20; /* Highlight border on focus */
+    outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #ff6f20;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Ensure button takes full width */
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e65b1f;
+}
+
+/* Close Button */
+.close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6f20;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+    background-color: #e65b1f;
+}
+
+/* Button to Post Your Article */
+.post-article-btn {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    background-color: #ff6f20;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.post-article-btn:hover {
+    background-color: #e65b1f;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .articles-tiles {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+
+    .modal-content {
+        width: 90%; /* Ensure modal is full-width on small screens */
+        padding: 20px;
+    }
+
+    .post-article-btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Show Modal when Active */
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content.active {
+    transform: translateY(0);
+}
+
+
+
+  
+  
